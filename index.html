@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+ 
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="title">
+    <ul>
+      <li>Rock</li>
+      <li>Paper</li>
+      <li>Scissors</li>
+      <li>Lizard</li>
+      <li>Spock</li>
+    </ul>
+    <div class="score-block">
+      <div class="score-title">Score</div>
+      <div class="score-number">0</div>
+    </div>
+  </section>
+
+  <section class="user-choice">
+    <img class="pentagone" src="images/bg-pentagon.svg" alt="">
+    <div onclick="confirmChoice('scissors')" class="choice-btn scissors"><img src="images/icon-scissors.svg" alt=""></div>
+    <div onclick="confirmChoice('paper')" class="choice-btn paper"><img src="images/icon-paper.svg" alt=""></div>
+    <div onclick="confirmChoice('rock')" class="choice-btn rock"><img src="images/icon-rock.svg" alt=""></div>
+    <div onclick="confirmChoice('lizard')" class="choice-btn lizard"><img src="images/icon-lizard.svg" alt=""></div>
+    <div onclick="confirmChoice('spock')" class="choice-btn spock"><img src="images/icon-spock.svg" alt=""></div>
+  </section>
+
+  <section class="rules-modal">
+    <div class="rules-header">
+      <h1>Rules</h1>
+      <img  class="close-btn" src="images/icon-close.svg" alt="">
+    </div>
+    <img src="images/image-rules-bonus.svg" alt="">
+  </section>
+
+  <section class="hidden choices">
+      
+      <div class="user-pick">
+        <p>You picked</p>
+        <div class=" user-play pick"><img src="images/icon-scissors.svg" alt=""></div>
+
+      </div>
+      <div class=" result">
+        <p class=" result-message"></p>
+        <div class="replay-btn">
+          Play again
+        </div>
+      </div>
+      <div class="house-pick">
+        <p>The house picked</p>
+        <div class=" house-play pick"><img src="images/icon-scissors.svg" alt=""></div>
+
+      </div>
+  </section>
+  <div class="rules-btn">
+    Rules
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
